@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script>
+//DIGITAR DOIS NUMEROS
+var n1,n2;
+n1=parseInt(prompt("Digite o primeiro numero"));
+n2= parseInt(prompt("Digite o segundo numero"));
+//IDENTIFICAR O MAIOR E O MENOR NUMERO
+if(n1<n2){
+	// começo da estrutra for
+	for(var i = n1; i <= n2; i++) 
+	{
+		if(i%2!=0){
+			document.write(i+'<br>');
+		}		
+	}
+}else if(n1>n2){
+	for(var i = n1; i >= n2; i--) 
+	{
+		if(i%2!=0){
+			document.write(i+'<br>');
+		}
+	}
+}else{
+document.write("numeros iguais");
+}
+</script>
+</body>
+</html>
